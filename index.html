@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection of Online Fake News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📰 Detection of Online Fake News</h1>
+
+    <p class="subtitle">
+        Enter a news statement and verify whether it is True or Fake.
+    </p>
+
+    <textarea
+        id="statement"
+        placeholder="Enter news statement here..."
+    ></textarea>
+
+    <button onclick="detectNews()">
+        🔍 Detect News
+    </button>
+
+    <div id="result" class="hidden"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
