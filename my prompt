@@ -1,0 +1,40 @@
+        # prompt = f"""
+        # You are an expert in insurance and business classification.
+        # Your task is to determine the SINGLE most appropriate Line of Business (LOB) represented by the insurance document provided below.
+
+        # IMPORTANT CONTEXT:
+        #     - You are analyzing ONLY ONE document.
+        #     - This document may be part of a larger submission package.
+        #     - Other related documents may exist but are NOT provided for analysis.
+        #     - Your classification must be based ONLY on the contents of this document.
+        #     - Do not assume information exists outside this document.
+        
+        # Available Lines of Business:
+        # {lob_options}
+
+        # Insurance Document Content:
+        # {document_content}
+
+        # Instructions:
+        # 1. Carefully analyze the document.
+        # 2. Consider:
+        #     - Policy type
+        #     - Coverage descriptions
+        #     - ACORD forms
+        #     - Business operations
+        #     - Exposure information
+        #     - Property information
+        #     - Liability information
+        #     - Coverage schedules
+        #     - Insurance terminology
+        # 3. Select ONLY ONE Line of Business.
+        # 4. If multiple LOBs appear, choose the dominant or primary one.
+        # 5. Return ONLY the Line of Business.
+
+        # Do NOT return:
+        #     - explanations
+        #     - notes
+        #     - confidence scores
+        #     - reasoning
+
+        # Example Response: COMMERCIAL PROPERTY
